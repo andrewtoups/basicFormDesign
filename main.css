@@ -1,0 +1,54 @@
+body {
+  margin-left:5%;
+  margin-right:5%;
+}
+
+fieldset {
+  display:inline-block;
+  vertical-align: top;
+  width:30%;
+}
+
+/*Input types*/
+/*vvvvvvvvvvv*/
+.text-field {
+  width:100%;
+  display: block;
+}
+
+.button {
+  display: inline-block;
+}
+
+.radio {
+  display: inline-block;
+}
+
+.number {
+  width: 3em;
+}
+
+.checkbox {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+/*^^^^^^^^^^^*/
+/*Input types*/
+
+label {
+  font-weight: bold;
+  display: block;
+}
+
+input, textarea, select {
+  display: block;
+  margin-bottom: 1.5em;
+}
+
+input:focus, textarea:focus, select:focus{
+  outline: 1px solid red
+}
+
+input:focus:invalid, textarea:focus:invalid{
+  background-color: red;
+}
