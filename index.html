@@ -11,34 +11,41 @@
     </header>
     <main>
 <!-- Form Starts Here -->
-      <form action="http://www.google.com" method="post">
+      <form action="http://requestb.in/tffjqytf" method="post">
+
+<!--            -->
 <!-- Basic Info -->
+<!--            -->
+
         <fieldset>
           <legend>Basic Info</legend>
 <!-- Name -->
           <label for="full-name">Full Name</label>
-          <input class="text-field" id="full-name" type="text" placeholder="Luke Skywalker" />
+          <input class="text-field" id="full-name" type="text" placeholder="Luke Skywalker" name="Full Name" required/>
 <!-- Profile Pic -->
           <label for="profile-pic">Profile Pic</label>
-          <input id="profile-pic" type="file" />
+          <input id="profile-pic" type="file" name="Profile Photo"/>
 <!-- Email -->
           <label for="email">Email</label>
-          <input class="text-field" id="email" type="text" placeholder="luke@sky.com"/>
+          <input class="text-field" id="email" type="text" placeholder="luke@sky.com" name="Email Address" required/>
 <!-- Force Side -->
           <label for="force-side">Side:</label>
-          <input class="radio" id="force-side" type="radio" value="Light"/> Light
-          <input class="radio" id="force-side" type="radio" value="Dark"/> Dark
+          <input class="radio" id="force-side" type="radio" value="Light" name="Side of Force"/> Light
+          <input class="radio" id="force-side" type="radio" value="Dark" name="Side of Force"/> Dark
 <!-- Origin Story -->
-          <label for="origin-stroy">Origin Story</label>
-          <textarea class ="text-field" id="origin-story" rows="6"></textarea>
+          <label for="origin-story">Origin Story</label>
+          <textarea class ="text-field" id="origin-story" rows="6" name="Origin Story" required></textarea>
         </fieldset>
 
+<!--           -->
 <!-- Abilities -->
+<!--           -->
+
         <fieldset>
           <legend>Abilities</legend>
 <!-- Lightsaber Color -->
           <label for="lightsaber-color">Lightsaber Color</label>
-          <select id="lightsaber-color">
+          <select id="lightsaber-color" name="Lightsaber Color">
             <option value="blue">Blue</option>
             <option value="red">Red</option>
             <option value="green">Green</option>
@@ -46,27 +53,45 @@
           </select>
 <!-- Levitation Amount -->
           <label for="levitation-amount">How many objects can you levitate at once?</label>
-          <input class ="number" id="levitation-amount" type="number" min="0" />
+          <input class ="number" id="levitation-amount" type="number" min="0" name="Levitation Amount" />
 <!-- Favorite Ability -->
           <label for="favorite-ability">Favorite Ability</label>
-          <input class="text-field" id="favorite-ability" type="text" placeholder="precognition" />
+          <input class="text-field" id="favorite-ability" type="text" placeholder="precognition" name="Favorite Ability" />
 <!-- Pilot Experience -->
           <label for="pilot-experience">Pilot Experience</label>
-          <input class="checkbox" id="pilot-experience" type="checkbox" value="speeder" />Speeder
-          <input class="checkbox" id="pilot-experience" type="checkbox" value="transport" />Transport
-          <input class="checkbox" id="pilot-experience" type="checkbox" value="x-wing" />X-Wing
-          <input class="checkbox" id="pilot-experience" type="checkbox" value="tie-fighter" />Tie Fighter
-          <input class="checkbox" id="pilot-experience" type="checkbox" value="starship" />Starship
-          <input class="checkbox" id="pilot-experience" type="checkbox" value="bantha" />Bantha
+          <input class="checkbox" id="pilot-experience" type="checkbox" value="speeder" name="Pilot Experirence"/>Speeder
+          <input class="checkbox" id="pilot-experience" type="checkbox" value="transport" name="Pilot Experirence" />Transport
+          <input class="checkbox" id="pilot-experience" type="checkbox" value="x-wing" name="Pilot Experirence" />X-Wing
+          <input class="checkbox" id="pilot-experience" type="checkbox" value="tie-fighter" name="Pilot Experirence" />Tie Fighter
+          <input class="checkbox" id="pilot-experience" type="checkbox" value="starship" name="Pilot Experirence" />Starship
+          <input class="checkbox" id="pilot-experience" type="checkbox" value="bantha" name="Pilot Experirence" />Bantha
         </fieldset>
+
+<!--                  -->
+<!-- Application Info -->
+<!--                  -->
 
         <fieldset>
           <legend>Application Info</legend>
+<!-- Desired Mentor -->
+          <label for="desired-mentor">Desired Mentor</label>
+          <input class="text-field" id="desired-mentor" type="text" placeholder="Yoda" name="Desired Mentor" />
+<!-- Application Date -->
+          <label for="application-date">Application Date</label>
+          <input id="application-date" type="date" required name="Application Date" />
+<!-- Password -->
+          <label for="password">Application Password</label>
+          <input id="password" type="password" required name="Password"/>
+<!-- How do you get to the dark side? -->
+          <label for="dark-side">How do you get to the dark side?</label>
+          <textarea class="text-field" rows="6" name="How do you get to the dark side?"></textarea>
+<!-- End Buttons -->
           <input class="button" type="reset" value="Start Over" />
           <input class="button" type="submit" value="Apply" />
         </fieldset>
 
       </form>
+<!-- End of Form -->
     </main>
     <footer>
       <p>&copy 2016 The Republic</p>
