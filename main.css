@@ -40,15 +40,15 @@ label {
   display: block;
 }
 
-input {
+input, textarea, select {
   display: block;
   margin-bottom: 1.5em;
 }
 
-select {
-  margin-bottom: 1.5em;
+input:focus, textarea:focus, select:focus{
+  outline: 1px solid red
 }
 
-textarea {
-  margin-bottom: 1.5em;
+input:focus:invalid, textarea:focus:invalid{
+  background-color: red;
 }
