@@ -23,10 +23,17 @@ fieldset {
 .radio {
   display: inline-block;
 }
+
+.number {
+  width: 3em;
+}
+
+.checkbox {
+  display: inline-block;
+  margin-bottom: 1em;
+}
 /*^^^^^^^^^^^*/
 /*Input types*/
-
-
 
 label {
   font-weight: bold;
@@ -35,5 +42,13 @@ label {
 
 input {
   display: block;
+  margin-bottom: 1.5em;
+}
+
+select {
+  margin-bottom: 1.5em;
+}
+
+textarea {
   margin-bottom: 1.5em;
 }

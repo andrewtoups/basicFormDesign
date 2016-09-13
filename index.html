@@ -10,6 +10,7 @@
       <h1>Force User Sign Up Form</h1>
     </header>
     <main>
+<!-- Form Starts Here -->
       <form action="http://www.google.com" method="post">
 <!-- Basic Info -->
         <fieldset>
@@ -32,8 +33,31 @@
           <textarea class ="text-field" id="origin-story" rows="6"></textarea>
         </fieldset>
 
+<!-- Abilities -->
         <fieldset>
           <legend>Abilities</legend>
+<!-- Lightsaber Color -->
+          <label for="lightsaber-color">Lightsaber Color</label>
+          <select id="lightsaber-color">
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="purple">Purple</option>
+          </select>
+<!-- Levitation Amount -->
+          <label for="levitation-amount">How many objects can you levitate at once?</label>
+          <input class ="number" id="levitation-amount" type="number" min="0" />
+<!-- Favorite Ability -->
+          <label for="favorite-ability">Favorite Ability</label>
+          <input class="text-field" id="favorite-ability" type="text" placeholder="precognition" />
+<!-- Pilot Experience -->
+          <label for="pilot-experience">Pilot Experience</label>
+          <input class="checkbox" id="pilot-experience" type="checkbox" value="speeder" />Speeder
+          <input class="checkbox" id="pilot-experience" type="checkbox" value="transport" />Transport
+          <input class="checkbox" id="pilot-experience" type="checkbox" value="x-wing" />X-Wing
+          <input class="checkbox" id="pilot-experience" type="checkbox" value="tie-fighter" />Tie Fighter
+          <input class="checkbox" id="pilot-experience" type="checkbox" value="starship" />Starship
+          <input class="checkbox" id="pilot-experience" type="checkbox" value="bantha" />Bantha
         </fieldset>
 
         <fieldset>
