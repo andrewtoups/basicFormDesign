@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title></title>
+    <title>Force User Sign Up Form</title>
     <link type"text/css" rel="stylesheet" href="main.css" />
   </head>
 
@@ -11,9 +11,25 @@
     </header>
     <main>
       <form action="http://www.google.com" method="post">
-
+<!-- Basic Info -->
         <fieldset>
           <legend>Basic Info</legend>
+<!-- Name -->
+          <label for="full-name">Full Name</label>
+          <input class="text-field" id="full-name" type="text" placeholder="Luke Skywalker" />
+<!-- Profile Pic -->
+          <label for="profile-pic">Profile Pic</label>
+          <input id="profile-pic" type="file" />
+<!-- Email -->
+          <label for="email">Email</label>
+          <input class="text-field" id="email" type="text" placeholder="luke@sky.com"/>
+<!-- Force Side -->
+          <label for="force-side">Side:</label>
+          <input class="radio" id="force-side" type="radio" value="Light"/> Light
+          <input class="radio" id="force-side" type="radio" value="Dark"/> Dark
+<!-- Origin Story -->
+          <label for="origin-stroy">Origin Story</label>
+          <textarea class ="text-field" id="origin-story" rows="6"></textarea>
         </fieldset>
 
         <fieldset>
@@ -22,11 +38,14 @@
 
         <fieldset>
           <legend>Application Info</legend>
-          <input type="submit" value="Start Over" />
-          <input type="submit" value="Apply" />
+          <input class="button" type="reset" value="Start Over" />
+          <input class="button" type="submit" value="Apply" />
         </fieldset>
 
       </form>
     </main>
+    <footer>
+      <p>&copy 2016 The Republic</p>
+    </footer>
   </body>
 </html>

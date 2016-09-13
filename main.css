@@ -1,3 +1,39 @@
-fieldset{
+body {
+  margin-left:5%;
+  margin-right:5%;
+}
+
+fieldset {
   display:inline-block;
+  vertical-align: top;
+  width:30%;
+}
+
+/*Input types*/
+/*vvvvvvvvvvv*/
+.text-field {
+  width:100%;
+  display: block;
+}
+
+.button {
+  display: inline-block;
+}
+
+.radio {
+  display: inline-block;
+}
+/*^^^^^^^^^^^*/
+/*Input types*/
+
+
+
+label {
+  font-weight: bold;
+  display: block;
+}
+
+input {
+  display: block;
+  margin-bottom: 1.5em;
 }
